@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { DrupalNode } from "next-drupal"
-
 import { absoluteUrl, formatDate } from "lib/utils"
 
 interface NodeArticleProps {
@@ -23,11 +22,11 @@ export function NodeArticle({ node, ...props }: NodeArticleProps) {
       {node.field_image && (
         <figure>
           <Image
-            src={absoluteUrl(node.field_image.uri.url)}
+            src={`${node.field_image.uri.url}`}
             width={768}
             height={400}
             layout="responsive"
-            objectFit="cover"
+            objectFit="none"
             alt={node.field_image.resourceIdObjMeta.alt}
             priority
           />

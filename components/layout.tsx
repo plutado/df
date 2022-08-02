@@ -11,7 +11,7 @@ export function Layout({ children }) {
           <div className="container flex items-center justify-between py-6 mx-auto">
             <Link href="/" passHref>
               <a className="text-2xl font-semibold no-underline">
-                Next.js for Drupal
+                David Fugate logo here
               </a>
             </Link>
             <Link href="https://next-drupal.org/docs" passHref>
