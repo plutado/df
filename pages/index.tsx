@@ -47,7 +47,7 @@ export async function getStaticProps(
       params: {
         "filter[status]": 1,
         "fields[node--article]": "title,path,field_media_image,uid,created",
-        include: "field_media_image,uid",
+        include: "field_image,uid",
         sort: "-created",
       },
     }
